@@ -1,0 +1,316 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #7F9183; 
+  margin: 0;
+}
+.box {
+  padding: 40px;
+  background-color: #262525;
+  border-radius: 8px;
+  box-shadow:  0px 4px 20px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  max-width: 686px;
+  min-height: 374px;
+  width: 100%;
+  color: white;
+}
+.homediv{
+  height: 100vh;
+  background-color: #7F9183; 
+  margin: 0;
+  min-height: fit-content;
+}
+.box h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.box h3 {
+  font-size: 18px;
+  margin-bottom: 70px;
+  color: #919191;
+}
+.btn-span{
+  color:#919191
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #425451;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #586F6B;
+}
+.typewriter {
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 36px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #262525;  /* Cursor effect */
+  animation: typing 4s steps(40) 1s infinite, blink 0.75s step-end infinite;
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 10%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 90%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.text-link {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.text-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.text-link a:hover {
+  text-decoration: none;
+  color:#4CAF50
+}
+input[type='text'],
+input[type='password'] {
+    width: 70%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+form{
+  margin-top: 30px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+.navbarcart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding:0px 30px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.navbar-left h2 {
+  margin: 0;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.logout-btn:hover {
+  background-color: #ff0000;
+}
+.profile-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Icon inside the profile circle */
+.profile-icon {
+  font-size: 18px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  right: 10px;
+  top: 50px; /* Adjust position based on your design */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dropdown-menu span {
+  margin-bottom: 5px;
+  color: black;
+}
+
+.logout-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #f44336; /* Red color for logout button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+.cart {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffff;
+  margin-right: 35px;
+}
+
+.cart:hover {
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+.food-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 90px;
+}
+
+.food-item {
+  border: 3px solid #4CAF50;
+  border-radius: 4px;
+  padding: 15px;
+  width: 270px;
+  text-align: center;
+  background-color: #333;
+  color:#ccc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1); 
+}
+.food-item:hover {
+  transform: scale(1.05); /* Moves the item slightly upwards */
+  box-shadow: 0px 8px 20px rgba(29, 19, 19, 0.15); /* Adds a subtle shadow */
+}
+
+.food-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.h1food {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.carth1{
+  text-align: center;
+  padding: 20px;
+  margin-top: 0;
+  background-color: #333;
+  color:white
+}
+.h2food {
+  font-size: 1em;
+  color: #333;
+}
+
+p {
+  font-size: 1em;
+  color: #f3f2f2;
+}
+.red-dot {
+  position: absolute;
+  top: 17;
+  right: 90;
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px;
+}
+.cart-summary{
+  text-align: center;
+}
+.order-history {
+  background-color: #7F9183;
+  height:100vh
+}
+
+.order-item {
+  border: 2px solid #4CAF50;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.order-item:hover {
+  transform: scale(1.01); /* Slight zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Bigger shadow on hover */
+}
+
+.order-item h3 {
+  margin-bottom: 10px;
+}
+
+.order-item ul {
+  list-style: none;
+  padding-left: 0;
+}
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
