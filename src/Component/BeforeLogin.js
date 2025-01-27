@@ -5,7 +5,7 @@ const BeforeLogin = () => {
         <div className="app-container">
             <div className="box">
                 <div><img src={logo} style={{ height: '87px', width: '100px', borderRadius: '60px' }} alt='here is an img'></img></div>
-                <div className="typewriter">Welcome to My Food Ordering App</div>
+                <div className="typewriter">Welcome to Foddiee By Moddie</div>
                 <h3>For more Info, login or signup</h3>
                 <div className="button-container">
                     <div style={{ marginBottom: '19px' }}>
